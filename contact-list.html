@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <title>Demo Project for ICE 6</title>
+    <title>Contact-List</title>
+
     <!-- CSS Selection-->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -13,12 +13,31 @@
 </head>
 <body>
     <header></header>
-
     <main class="container">
-        <h1><i class="nb-5"></i>Home</h1>
-        <button id="Aboutusbutton" class="btn btn-primary">Learn more</button>
-    </main>
+        <h1>Contact List</h1>
 
+        <div class="row">
+          <div class="col">
+
+            <button id="addButton" class="btn btn-primary mb-1"><i class="fas fa-plus-circle">Add Contact</i></button>
+
+
+            <table class="table table-striped table-bordered table-hover">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col" class="text-centre">#</th>
+                  <th scope="col">Full Name</th>
+                  <th scope="col">Contact Number</th>
+                  <th scope="col">Email Address</th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody id="contactlist"></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
     <!--Scripting Selection-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
